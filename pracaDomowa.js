@@ -119,17 +119,28 @@ console.log(longest);
 
 
 let numberArray = [1,6,23,8,4,98,3,7,3,98,4,98];
-let highIndex = 0;
+let najwieksza = 0 
+let najwiekszeIndexy=[];
+for (i=0; i < numberArray.length; i++) {
+    if(numberArray[i]>najwieksza) {
+najwieksza = numberArray[i];
 
-for (i = 0; i < numberArray.length; i++) {
-
-if(highIndex>=numberArray[i]){
-
-highIndex=numberArray[i] }; };
-
-console.log(numberArray[i]);
-
+       
+    };
+};
+let j = 0;
+for (i=0; i < numberArray.length; i++) {
+	if(najwieksza == numberArray[i]){
+	najwiekszeIndexy[j]=i;
+j++;
+}
+}
+console.log("najwieszka liczba to", najwieksza );
+for(i=0; i < najwiekszeIndexy.length; i++){
+console.log("najwieksze indeksy", najwiekszeIndexy[i]  )
+};
   
+
   
   
 
